@@ -1,0 +1,110 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        
+    }
+     .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input, select {
+         width: 100%;
+         padding: 8px;
+         box-scaling: border-box;        
+    }
+    button {
+        padding: 10px 15px;
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Employee Registration Form</h1>
+    <form action="#" method="post"> 
+        <div class="form-group">
+            <label>Title:</label>
+            <select name="title">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+            </select> 
+        </div>
+        
+        <div class="form-group">
+           <label>First Name:</label>
+           <input type="text"  name="firstName" required>
+        </div>
+
+        <div class="form-group">   
+           <label>Last Name:</label>
+           <input type="text"  name="lastName" required>
+        </div>
+
+        <div class="form-group">   
+            <label>Mail Address1:</label>"
+            <input type="text"  name="mail address1" required>
+        </div>
+
+        <div class="form-group">
+             <label>Mail Address2:</label>
+             <input type="text"  name="mail address2" required>
+        </div>
+        
+        <div class="form-group">
+             <label>City:</label>
+             <input type="text"  name="city" required>
+        </div>
+        
+        <div class="form-group">
+             <label>State:</label>
+             <input type="text" name="state" value="Gujarat" required>
+        </div>
+
+        <div class="form-group">
+             <label>Zip code:</label>
+             <input type="text"  name="zip" required>
+        </div>
+        
+        <div class="form-group">
+             <label>Upload Photo:</label>
+             <input type="file"  name="photo" required>
+        </div>
+        
+        <div class="form-group">
+             <label>E-Mail:</label>
+             <input type="email"  name="email" required>
+        </div>
+        
+        <div class="form-group">
+             <label>Mobile:</label>
+             <input type="tel"  name="mobile" required>
+        </div>
+        
+        <div class="form-group">
+             <label>Languages Known:</label>
+             <input type="checkbox"  name="languages" value="Gujarati">Gujarati<br>
+             <input type="checkbox"  name="languages" value="English">English<br>
+        </div>
+        
+        <div class="form-group">
+             <label>Additional Information:</label>
+             <textarea  name="additionalInfo" rows="4"></textarea>
+        </div>     
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>  
+        
+</body>
+</html>

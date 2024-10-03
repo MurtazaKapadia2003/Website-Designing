@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport  content="width=device-width, initial-scale="1.0">
+    <title>Nested Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100px;
+            margin: 10px 0;
+        }
+        th,  td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .nested-table {
+            margin: 10px 0;
+        }
+    </style>
+</head>    
+<body>
+
+    <h2>Device Specifications</h2>
+
+    <table>
+        <tr>
+            <th>Device Type</th>
+            <th>Specifications</th>
+        </tr>
+        <tr>
+            <th>Smartphone</th>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Storage</th>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                        <td>iphone 12 Pro</td>
+                        <td>256GB</td>
+                    </tr>    
+                    <tr>
+                        <td>Apple</td>
+                        <td>iphone SE</td>
+                        <td>128GB</td>
+                    </tr>
+                    <tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Display Size</th>
+                    </tr>
+                    <tr>
+                        <td>HP</td>
+                        <td>HP</td>
+                        <td>15.6"</td>
+                    </tr>
+                </table> 
+            </td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>
+                <table class="nested-table">
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Display Size</th>
+                    </tr>
+                    <tr>
+                        <td>Samsung</td>
+                        <td>Samsung</td>
+                        <td>10.5"</td>
+                    </tr>
+                </table>    
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
