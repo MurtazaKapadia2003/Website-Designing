@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Responsive Image Gallery</title>
+</head>
+<style>
+body  {
+    margin: 0;
+    font-family: Arial, Sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+</style>
+
+<body>
+    <div class="gallery">
+        <img src="image1.jpg"  alt="Image 1">
+        <img src="image2.jpg"  alt="Image 2">
+        <img src="image3.jpg"  alt="Image 3">
+        <img src="image4.jpg"  alt="Image 4">
+        <img src="image5.jpg"  alt="Image 5">
+        <img src="image6.jpg"  alt="Image 6">
+    </div>
+</body>
+</html>

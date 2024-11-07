@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage the Team Everyone wants to be on</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .intro {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .intro h2 {
+        font-family: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .team-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 250px;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 50%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .card p {
+        font-size: 1rom;
+        color: #777;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Media Queries */
+
+    /* Tablet devices and below (max-width: 768px) */
+    @media (max-width: 768px) {
+        header .logo h1 {
+            font-size: 1.8rem;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .team-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+        }
+    }
+
+    /* Mobile devices and below (max-width: 480px) */
+    @media (max-width: 480px) {
+        header .logo h1 {
+            font-size: 1.5rem;
+        }
+
+        nav ul li a {
+            font-size: 0.9rem;
+        } 
+
+        .team-cards {
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        .card {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+<body>
+
+    <!-- Header Section-->
+     <header>
+        <div class="logo">
+            <h1>Team Management</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href=#home>Home</a></li>
+                <li><a href=#about>About</a></li>
+                <li><a href=#services>Services</a></li>
+                <li><a href=#contact>Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+
+
+     <!--main content section-->
+     <main>
+        <section class="intro">
+            <h2>Manage the team everyone wants to be on</h2>
+            <p>Build and grow your dream team with powerful tools and insights.</p>
+        </section>
+
+        <section class="team-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Team Member">
+                <h3>John Doe</h3>
+                <p>Team Lead</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Team Member">
+                <h3>Jane smith</h3>
+                <p>Developer</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Team Member">
+                <h3>Mary Johnson</h3>
+                <p>Designer</p>
+            </div>
+        </section>
+     </main>
+
+     <!-- Footer Section-->
+      <footer>
+        <p>&copy; 2024 Team Management. All rights reserved.</p>
+      </footer>
+
+
+</body>
+</html>
